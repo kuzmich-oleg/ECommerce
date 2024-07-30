@@ -5,25 +5,25 @@ services:
     image: ${DOCKER_REGISTRY-}ecommerceapicustomers
     build:
       context: .
-      dockerfile: ECommerce.API.Customers\Dockerfile
+      dockerfile: ECommerce.API.Customers/Dockerfile
 
   ecommerce.api.orders:
     image: ${DOCKER_REGISTRY-}ecommerceapiorders
     build:
       context: .
-      dockerfile: ECommerce.API.Orders\Dockerfile
+      dockerfile: ECommerce.API.Orders/Dockerfile
 
 
   ecommerce.api.products:
     image: ${DOCKER_REGISTRY-}ecommerceapiproducts
     build:
       context: .
-      dockerfile: ECommerce.API.Products\Dockerfile
+      dockerfile: ECommerce.API.Products/Dockerfile
 
 
   ecommerce.api.search:
     image: ${DOCKER_REGISTRY-}ecommerceapisearch
     build:
       context: .
-      dockerfile: ECommerce.API.Search\Dockerfile
+      dockerfile: ECommerce.API.Search/Dockerfile
 
